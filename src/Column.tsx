@@ -1,15 +1,15 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { ColumnContainer, ColumnTitle } from './styles'
 
 interface ColumnProps {
     text: string
 }
 
-export const Column = ({ text }: React.PropsWithChildren<ColumnProps>) => (
+export const Column = ({ text, children }: React.PropsWithChildren<ColumnProps>) => (
     <ColumnContainer>
         <ColumnTitle>
-            Column Title
+           {text}
         </ColumnTitle>
-        {Children}
+        {children}
     </ColumnContainer>
 )
