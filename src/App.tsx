@@ -14,10 +14,10 @@ const App = () => (
     </Column>
     <Column text="Done">
     <Card text="Begin to use static typing" />
-    <AddNewItem 
+    </Column>
+     <AddNewItem 
      toggleButtonText='+ Add another list'
      onAdd={console.log} />
-    </Column>
 </AppContainer>
 )
 

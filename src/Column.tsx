@@ -1,4 +1,5 @@
 import React from 'react'
+import { AddNewItem } from './AddNewItem'
 import { ColumnContainer, ColumnTitle } from './styles'
 
 interface ColumnProps {
@@ -11,5 +12,6 @@ export const Column = ({ text, children }: React.PropsWithChildren<ColumnProps>)
            {text}
         </ColumnTitle>
         {children}
+        <AddNewItem toggleButtonText='+ Add New Item' onAdd={console.log} />
     </ColumnContainer>
 )
